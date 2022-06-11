@@ -9,12 +9,12 @@ class PrimeTest {
         assertFalse(Prime.isPrime(0));
         assertFalse(Prime.isPrime(4));
         assertFalse(Prime.isPrime(6));
-        assertFalse(Prime.isPrime(8));
+        assertFalse(Prime.isPrime(28));
 
 
         assertTrue(Prime.isPrime(2));
         assertTrue(Prime.isPrime(5));
-        assertTrue(Prime.isPrime(17));
-        assertTrue(Prime.isPrime(20254685));
+        assertTrue(Prime.isPrime(23));
+        assertTrue(Prime.isPrime(20273371));
     }
 }
