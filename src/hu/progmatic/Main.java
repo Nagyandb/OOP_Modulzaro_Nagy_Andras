@@ -53,15 +53,15 @@ public class Main {
             writer.println("year;stage;date;team_a;team_b;goals_a;goals_b;penalties_a;penalties_b");
 
             for (Matches matches1 : matches) {
-                if (matches1.getYear() == year) {
-                    writer.write(matches1.getStage() + ";" +
+                if (matches1.getYear() == (year)){
+                    writer.write( matches1.getStage() + ";" +
                             matches1.getDate() + ";"
                             + matches1.getTeamA() + ";"
                             + matches1.getTeamB() + ";"
                             + matches1.getGoalsA() + ";"
-                            + matches1.getGoalsB() + ";"
+                            + matches1.getGoalsB() + ","
                             + matches1.getPenA() + ";"
-                            + matches1.getPenB());
+                            + matches1.getPenB() +"\n");
                 }
 
 
