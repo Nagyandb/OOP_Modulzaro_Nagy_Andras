@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
+        // GYAKORLAT / 1. - FÁJLKEZELÉS
         List<Matches> matches = null;
         try {
             matches = new ArrayList<>();
@@ -50,6 +51,12 @@ public class Main {
 
         try (PrintWriter writer = new PrintWriter("selected.csv")) {
             writer.println("year;stage;date;team_a;team_b;goals_a;goals_b;penalties_a;penalties_b");
+
+            for (Matches matches1 : matches) {
+                /*if (matches1.)*/
+
+
+            }
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         }
