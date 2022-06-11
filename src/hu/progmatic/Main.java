@@ -47,6 +47,16 @@ public class Main {
             }
         } System.out.println("Legnagyobb gólkülönbség a bajnokságon: " + max);
 
+        // GYAKORLAT / 3. – GYŐZELMEK SZÁMA
+        int summ = 0;
+
+        for (Matches betA : matches) {
+            if (betA.getYear() == year) {
+                if (betA.getGoalsA() > betA.getGoalsB())
+                    summ++;
+            }
+        }
+        System.out.println("A fogadó " + summ + " fogadást nyert meg.");
 
 
         try (PrintWriter writer = new PrintWriter("selected.csv")) {
